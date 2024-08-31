@@ -1,0 +1,42 @@
+{
+  "name": "restaurant-pos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "pos mern app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "admin": "npm start --prefix admin",
+    "dev": "concurrently \"npm run server\"  \"npm run admin\" ",
+    "seed": "node seeder.js"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "restaurantpos",
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^5.16.1",
+    "axios": "^1.6.8",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^2.5.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.13",
+    "redux-devtools-extension": "^2.13.9",
+    "stripe": "^15.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
